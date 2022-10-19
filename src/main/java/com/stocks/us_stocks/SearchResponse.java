@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class SearchResponse {
     String update;
     String term;
-    ArrayList <USRanking> us_ranking = new ArrayList<USRanking>();
+    ArrayList <String[]> us_ranking = new ArrayList<>();
 
     
     public String getUpdate() {
@@ -20,13 +20,12 @@ public class SearchResponse {
     public void setTerm(String term) {
         this.term = term;
     }
-    public ArrayList<USRanking> getUs_ranking() {
+    public ArrayList<String[]> getUs_ranking() {
         return us_ranking;
     }
-    public void setUs_ranking(ArrayList<USRanking> us_ranking) {
+    public void setUs_ranking(ArrayList<String[]> us_ranking) {
         this.us_ranking = us_ranking;
     }
-
     
 
 

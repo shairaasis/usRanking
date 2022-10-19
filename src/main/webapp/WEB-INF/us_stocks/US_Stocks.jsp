@@ -1116,10 +1116,10 @@ function addPopUp(addUrl) {
 	  </div>
 	</div>
 
-	<div class="searchFunction">
-		<s:form action="search">
+	<div class="searchGSON">
+		<s:form action="searchGSON">
 			<h1>SEARCH FUNCTION</h1>
-        <s:textfield name="searchPhrase" label="Search Stocks" />
+        <s:textfield name="keyword" label="Search Stocks" />
         
         <s:submit value="Search" style="padding: 5px; background-color:#004C64; color: white; border: none;"/>
         </s:form>

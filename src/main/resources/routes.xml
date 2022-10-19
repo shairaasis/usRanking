@@ -25,8 +25,8 @@
 
 
 
-        <action name="search" class="com.stocks.us_stocks.Search" method="execute">
-            <result name="success">/WEB-INF/us_stocks/US_Stocks_result.jsp</result>
+        <action name="searchGSON" class="com.stocks.us_stocks.SearchUsingGson" method="execute">
+            <result name="success">/WEB-INF/us_stocks/US_StocksSearchResults.jsp</result>
         </action>
 
 

@@ -39,7 +39,6 @@ public class Search extends ActionSupport{
             System.out.println("Word and definition: ..."+ searchResponse.getUs_ranking());
             
             conn.disconnect();
-
             
         } catch (Exception e) {
             e.printStackTrace();
