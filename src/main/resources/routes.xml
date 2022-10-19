@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<!-- 
+  - This file is included by the struts.xml file as an example
+  - of how to break up the configuration file into multiple files.
+-->
+<struts>
+    <package name="us_stocks" namespace="/us_stocks" extends="struts-default">
+
+        <default-action-ref name="us_stocks" />
+
+        <action name="us_stocks" class="com.stocks.us_stocks.US_Stocks">
+            <result>/WEB-INF/us_stocks/US_Stocks.jsp</result>
+        </action>
+
+        <action name="individual_stock" class="com.stocks.us_stocks.Individual_Stock">
+            <result>/WEB-INF/us_stocks/Individual_Stock.jsp</result>
+        </action>
+        
+        <action name="*" class="com.stocks.SupportAction">
+            <result>/WEB-INF/us_stocks/{1}.jsp</result>
+        </action>
+
+
+
+        <action name="search" class="com.stocks.us_stocks.Search" method="execute">
+            <result name="success">/WEB-INF/us_stocks/US_Stocks_result.jsp</result>
+        </action>
+
+
+        <!-- <action name="parse" class="com.stocks.us_stocks.Search2" method="jacksonParse">
+            <result name="success">/WEB-INF/us_stocks/US_Stocks_result.jsp</result>
+        </action> -->
+
+        <!-- Add additional "example" package actions here. -->
+
+    </package>
+</struts>
